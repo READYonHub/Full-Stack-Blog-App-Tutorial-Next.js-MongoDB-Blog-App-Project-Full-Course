@@ -1,13 +1,15 @@
+import { ThemeContextProvider } from '@/context/ThemeContext'
 import Footer from './components/footer/Footer'
 import Navbar from './components/navbar/Navbar'
 import './globals.css'
 import { Inter } from 'next/font/google'
+import ThemeProvider from '@/providers/ThemeProvider'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Blog App',
-  description: 'The best blog app!',
+  title: 'OTTO-MOBIL ',
+  description: 'OTTO-MOBIL egy autós-turisztikai magazin!',
 }
 
 export default function RootLayout({ children }) {
@@ -15,13 +17,17 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body
        className={inter.className}>
-        <div className="container">
-          <div className="wrapper">
-            <Navbar/>
-              {children}
-            <Footer/>
-          </div>
-        </div>
+        <ThemeContextProvider>
+          <ThemeProvider>
+            <div className="container">
+              <div className="wrapper">
+                <Navbar/>
+                  {children}
+                <Footer/>
+              </div>
+            </div>
+          </ThemeProvider>
+        </ThemeContextProvider>
        </body>
     </html>
   )
