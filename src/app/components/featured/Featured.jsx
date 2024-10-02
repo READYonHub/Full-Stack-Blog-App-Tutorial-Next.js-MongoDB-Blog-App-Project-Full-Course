@@ -6,18 +6,18 @@ const Featured = () => {
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>
-        <b>Hey, OTTO-MOBILE itt van!</b> Fedezd fel a sztoriaimat és a kreatív öteleteimet.
+        <b>Otto-Mobil!</b> első posztja.
       </h1>
       <div className={styles.post}>
         <div className={styles.imgContainer}>
           <Image src="/p1.jpeg" alt="" fill className={styles.image} />
         </div>
         <div className={styles.textContainer}>
-          <h1 className={styles.postTitle}>CimCIMCIMCIMCIMCIMCIM.</h1>
+          <h1 className={styles.postTitle}>Első poszt.</h1>
           <p className={styles.postDesc}>
-           Ez lesz majd a posztnak a leírása.Ez lesz majd a posztnak a leírása. Ez lesz majd a posztnak a leírása.Ez lesz majd a posztnak a leírása.Ez lesz majd a posztnak a leírása.Ez lesz majd a posztnak a leírása.Ez lesz majd a posztnak a leírása.Ez lesz majd a posztnak a leírása.Ez lesz majd a posztnak a leírása.Ez lesz majd a posztnak a leírása.Ez lesz majd a posztnak a leírása.Ez lesz majd a posztnak a leírása.Ez lesz majd a posztnak a leírása.
+           Itt lesznek az Otto-Mobil autós tesztjei, turisztikája és egyéb finom újdonságok.
           </p>
-          <button className={styles.button}>Read More</button>
+          <button className={styles.button}>Tovább olvasom!</button>
         </div>
       </div>
     </div>
