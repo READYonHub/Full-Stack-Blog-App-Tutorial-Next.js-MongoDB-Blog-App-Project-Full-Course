@@ -1,12 +1,20 @@
 import React from 'react';
 import styles from './cardList.module.css';
 import Pagination from '../pagination/Pagination';
+import Image from 'next/image';
+import Link from 'next/link';
+import Card from '../card/Card';
 
 const CardList = () => {
   return (
     <div className={styles.container}>
-      CardList
-      <Pagination/>
+      <h1 className={styles.title}>Jelenlegi posztok</h1>
+      <div className={styles.posts}>
+        <Card />
+        <Card />
+        <Card />
+      </div>
+      <Pagination />
     </div>
   )
 }
