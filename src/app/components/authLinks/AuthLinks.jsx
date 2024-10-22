@@ -11,7 +11,7 @@ const AuthLinks = () => {
   const [open, setOpen] = useState(false)
 
   //temporary
-  const {status} = useSession();
+  const { status } = useSession();
   return (
     <>
       {

@@ -8,7 +8,7 @@ const SinglePage = () => {
         <div className={styles.container}>
             <div className={styles.infoContainer}>
                 <div className={styles.textContainer}>
-                    <h1 className={styles.title}>ciiiiiimmmmmmm</h1>
+                    <h1 className={styles.title}>Hülyeséget irtál be</h1>
                     <div className={styles.user}>
                         <div className={styles.userImageContainer}>
                             <Image src="/p1.jpeg" alt="" fill className={styles.avatar} />
