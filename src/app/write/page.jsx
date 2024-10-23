@@ -16,16 +16,19 @@ const WritePage = () => {
 
     const [open, setOpen] = useState(false);
     const [value, setValue] = useState("");
-    
+
     if (status === "loading") {
         return (
             <div className={styles.loading}>Loading...</div>
         )
     }
     if (status === "authenticated") {
+        router.push("/write");
+    }
+    else {
         router.push("/");
     }
-    
+
     return (
         <div className={styles.container}>
             <input className={styles.input} type="text" placeholder="Title" />
